@@ -1,0 +1,19 @@
+.alaya{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bobo{
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  
+}
+
+.sred{
+  color: rgb(164, 164, 164);
+}
+
+.sgreen{
+  color: rgb(0, 0, 0);
+}
