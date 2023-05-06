@@ -1,17 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Addmovie from './Addmovie';
 
-const Navmovie=()=>{
+const Navmovie=({movies,setMovies})=>{
+  // console.log('nav comp', movies)
     return(
-        <div>
-      <Navbar bg="primary" variant="dark">
+        <div className='mm'>
+      <Navbar bg="primary" variant="dark" >
         <Container>
-          <Navbar.Brand href="#home">Movie APP</Navbar.Brand>
+          <Navbar.Brand href="#home">Movie++ </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Movie</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/listmovie">Movie</Nav.Link>
+            {/* <Nav.Link href="/addmovie">Addmovie</Nav.Link> */}
+            <Addmovie movies={movies} setMovies={setMovies}/>
+            {/* <Filtermovie search={search} setSearch={setSearch} rate={rate} setRate={setRate}/> */}
           </Nav>
         </Container>
       </Navbar>

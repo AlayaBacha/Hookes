@@ -8,7 +8,7 @@ const Filtermovie=({setSearch,setRate,search,rate})=>{
             setRate(0)
         }
     return(
-        <div>
+        <div className='bacha'>
           <input value={search} onChange={(e)=>setSearch(e.target.value)} type="text"/>
             <Rating value={rate} onChange={(e)=>setRate(e.target.value)} name="simple-controlled"/>
             <button onClick={handelReset}>Reset</button>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Rating from '@mui/material/Rating';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Cardmovie=({el,movies,setMovies})=>{
     const [showMore, setShowMore] = useState(false);
     const handleDelete=(a)=>{
@@ -11,7 +12,7 @@ const Cardmovie=({el,movies,setMovies})=>{
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={el.posterURL} style={{width:"286px",height:"406px"}} />
         <Card.Body>
-          <Card.Title>{el.title}</Card.Title>
+          <Card.Title><Link to={`/Profil/${el.id}`}>{el.title}</Link></Card.Title>
           <Card.Text>
             {
                 showMore ? el.discription : `${el.discription.substring(0, 80)}`
