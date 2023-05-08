@@ -53,4 +53,20 @@
 
 
 }
+.nn{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+.kk{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+.ll{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
